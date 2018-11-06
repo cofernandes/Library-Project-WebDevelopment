@@ -1,0 +1,93 @@
+﻿@charset "utf-8";
+/*Destaca itens de busca*/
+.destacarBusca{background-color: yellow;padding:1px;font-weight:bold;font-style: italic;color:black !important;}
+
+/*GLOBAL*/
+*{margin:0;padding:0;}
+body,html{background-color: #e8e8e8;}
+
+.add, .add a{border:0 !important;margin-top:-5px;}
+.img{border:0 !important;}
+
+/*Não permitir quebra de linha*/
+.linhaSemQuebrar{  width: 100px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;}
+
+/*Menu de imagens no top*/
+.lixeira,.prazos,.relatorios,.perfil,.opcoes{color:black;font-size:17px;}
+.lixeira:hover,.prazos:hover,.relatorios:hover,.perfil:hover,.opcoes:hover{color:blue;}
+.sair{color:red;font-size:16px;}
+.sair:hover{color:#9f0000;}
+
+/*Cores*/
+.red{color: red;}
+.green{color:#0B0;}
+.yellow{color:yellow;}
+.black{color:black;}
+.bold{font-weight: bold;}
+.requerido {color: red;}
+.bg-red{background-color:red !important;}
+.bg-blue{background-color: #3d5996;}
+.bg-green{background-color:green !important;}
+.bg-cinza{background-color:#ccc !important;}
+.white, .white a{color:white;}
+.decorationOff{text-decoration:none !important;}
+
+/*Contador de dados*/
+.badge{background-color: #337ab7;float:right;}
+.menu{margin-bottom: 0 !important;}
+.relatorio{background-color: white;}
+
+/*Publicações*/
+.separaPub{margin-bottom:5px;}
+.publicacao{border-bottom:1px solid #dedede;}
+.background-Branco{background-color:white !important;}
+.tituloPublicacao{font-size:1.2em;font-weight:bold;width:100%;margin-bottom:2px;color:#000000;}
+.subTituloPublicacao{font-size:1em;font-style:italic;width:100%;color:#bebebe;}
+.seguraPublicacao{min-height:150px;max-height:380px;overflow: auto;margin-bottom:10px;}
+.textoPublicacao{text-align:justify !important;font-size:1.2em;}
+.numeroProcesso{color:#0a0;}
+.nomeCliente{color:#f00;}
+.divisorVertical{border-right:1px solid #bebebe;margin: 1px 10px;}
+
+/*delegar*/
+.heightTexto{min-height:125px;}
+
+/*Bordas*/
+.border-left{border-left: 2px dashed #ddd;}
+
+/*Tela de cadastro do cliente*/
+.btnRight{float: right;margin-top:-5px;}
+.alert{text-align: center;}
+
+/*Margens*/
+.margin-top-10{margin-top:10px;}
+.margin-bottom-10{margin-bottom:10px !important;}
+.height-50{height:50px;}
+.height-100{height:100px;}
+
+/*Posicionamento*/
+.left{float:left;}
+.right{float:right;}
+.left-sem-borda{float:left;border:none;}
+.sem-padding{padding:0;margin:0;}
+pre{background:transparent;border:none;margin:0 !important;padding:0 !important;font-size:16px;text-align:justify;}
+.justify{text-align:justify;line-height:25px;}
+
+/*Separa dados linha*/
+.separador{margin:20px auto;display:block;clear: both;}
+
+/*Botoes*/
+#btnSalvar{background-image: url("../imagens/acoes/btnSalvar.png");width:32px;height:32px;}
+.btnSalvar{background:transparent;border:none;float:right;}
+
+#btnExcluir{background-image: url("../imagens/acoes/excluir.png");width:32px;height:32px;}
+.btnExcluir{background:transparent;border:none;float:right;}
+
+/*mantem mensagem separada*/
+.block{clear: both;display: block;}
+
+/*Textarea*/
+#novidadeVersao, .textArea{min-height:400px;height:auto;max-height: 700px;}

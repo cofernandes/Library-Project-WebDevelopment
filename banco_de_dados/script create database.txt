@@ -1,0 +1,81 @@
+create database if not exists library
+default character set utf8
+default collate utf8_general_ci;
+
+create table user(
+iduser int(10) not null auto_increment,
+name varchar(100) not null,
+email varchar(100) not null,
+password varchar(40) not null,
+profile varchar(20) default 'client',
+status enum('A','B') default 'A',
+primary key(iduser)
+)default charset = utf8;
+
+create table book(
+idbook int(10) not null auto_increment,
+author int(10) not null,
+publishingcompany int(10) not null,
+title varchar(100) not null,
+launchdate date not null,
+language varchar(20) not null,
+isbn int(13) not null,
+edition int(10) not null,
+page int(5) not null,
+genre varchar(20) not null,
+readingtime int(10) not null,
+primary key(idbook)
+) default charset = utf8;
+
+create table author(
+idauthor int(10) not null auto_increment,
+name varchar(100) not null,
+primary  key(idauthor)
+)default charset=utf8;
+
+create table publishingcompany(
+idpublishingcompany int(10) not null auto_increment,
+name varchar(100) not null,
+address varchar(100),
+neighborhood varchar(100),
+number int(5),
+city varchar(50),
+zipcode int(10),
+cnpj int(15),
+primary key (idpublishingcompany)
+)default charset=utf8;
+
+create table rentals(
+idrentals int(10) not null auto_increment,
+iduserreceived int(10) not null,
+iduserrented int(10) not null,
+idbook int(10) not null,
+rentdate date not null,
+whattime int(3) not null,
+returndate date not null,
+status varchar(20) default 'reserved'
+primary key(idrentals)
+)default charset=utf8;
+
+create table log(
+idlog int(10) not null auto_increment,
+iduser int(10) not null,
+datalog date not null,
+hourlog time not null,
+logtype varchar(15) not null,
+comment varchar(255) not null,
+primary key(idlog)
+)default charset=utf8;
+
+create table permission(
+idpermission int(10) not null auto_increment,
+permission varchar(50) not null,
+primary key(idpermission)
+)default charset=utf8;
+
+create table userpermission (
+iduser int(10) not null,
+idpermission int(10) not null
+) default charset=utf8;
+
+insert into user(name,email,password,profile)values('admin','admin@admin.com','21232f297a57a5a743894a0e4a801fc3','root');

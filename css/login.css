@@ -1,0 +1,21 @@
+/*Orientacoes*/
+.right{float:right;}
+
+
+.box-shadow{
+	box-shadow: 3px 3px 15px black;
+}
+
+.navbar a{
+	color:black;
+}
+
+.btn {
+	border-radius:5px !important;
+}
+
+.navbar{
+	color:black;
+	box-shadow: 3px 3px 15px #ddd;	
+	border-bottom: 1px solid #ccc;
+}
